@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.aurionpro.list.test.BookComparatorTest&apos; to &apos;BookComparatorAppTest&apos;&#x0D;&#x0A;- Original project: &apos;19_CollectionsApp&apos;&#x0D;&#x0A;- Original element: &apos;com.aurionpro.list.test.BookComparatorTest&apos;&#x0D;&#x0A;- Renamed element: &apos;com.aurionpro.list.test.BookComparatorAppTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;BookComparatorTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.aurionpro.list.test{BookComparatorTest.java[BookComparatorTest" matchStrategy="1" name="BookComparatorAppTest" qualified="false" references="true" similarDeclarations="false" stamp="1721744407092" textual="false" version="1.0"/>
+</session>

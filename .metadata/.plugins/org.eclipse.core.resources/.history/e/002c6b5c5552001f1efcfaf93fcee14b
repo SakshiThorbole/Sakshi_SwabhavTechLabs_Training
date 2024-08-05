@@ -1,0 +1,41 @@
+package com.aurionpro.model;
+
+import com.aurionpro.model.TicTacToeGame;
+
+public class TicTacToeGame {
+    private TicTacToeGame game;
+
+    public TicTacToeGame() {
+        game = new TicTacToeGame();
+        game.board = new String[9];
+        game.turn = "X";
+        for (int i = 0; i < 9; i++) {
+            game.board[i] = String.valueOf(i + 1);
+        }
+    }
+
+    public void printBoard() {
+        game.printBoard();
+    }
+
+    public boolean makeMove(int slot) {
+        if (game.board[slot - 1].equals(String.valueOf(slot))) {
+            game.board[slot - 1] = game.turn;
+            if (game.turn.equals("X")) {
+                game.turn = "0";
+            } else {
+                game.turn = "X";
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public String checkWinner() {
+        return game.checkWinner();
+    }
+
+    public String getCurrentTurn() {
+        return game.turn;
+    }
+}

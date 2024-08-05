@@ -1,0 +1,43 @@
+package com.aurionpro.test;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import com.aurionpro.model.TicTacToeGame;
+
+public class TicTacToeGameTest {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        TicTacToeGame game = new TicTacToeGame();
+        game.board = new String[9];
+        game.turn = "X";
+        String winner = null;
+
+        for (int i = 0; i < 9; i++) {
+            game.board[i] = String.valueOf(i + 1);
+        }
+
+        System.out.println("Welcome to Tic Tac Toe Game!");
+        game.printBoard();
+
+        System.out.println("X will play first. Enter a slot number to place X in: ");
+
+        while (winner == null) {
+            int numberInput;
+
+            try {
+                numberInput = scanner.nextInt();
+                if (!(numberInput > 0 && numberInput <= 9)) {
+                    System.out.println("Invalid Input, re-enter slot number: ");
+                    continue;
+                }
+            } catch (InputMismatchException e) {
+                System.out.println("Invalid Input, re-enter slot number: ");
+                scanner.next(); // Clear the invalid input
+                continue;
+            }
+
+            // Here is the logic to decide the turn.
+
+            if (game.board[numberInput - 1].equals(String.valueOf(numberInput))) {
+           

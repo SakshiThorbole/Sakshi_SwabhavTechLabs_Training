@@ -1,0 +1,22 @@
+package com.aurionpro.test;
+
+import com.aurionpro.model.FixedDeposit;
+import com.aurionpro.model.FestivalType;
+
+public class FixedDepositTest {
+
+	public static void main(String[] args) {
+		
+		FixedDeposit fixedDeposit1 = new FixedDeposit(100, "Sakshi", 10000, 5, FestivalType.NEWYEAR);
+		
+//		FixedDeposit fd1 = new FixedDeposit(101, "John Doe", 10000, 5, FestivalType.NEWYEAR);
+//		FixedDeposit fd2 = new FixedDeposit(102, "Jane Doe", 15000, 3, FestivalType.DIWALI);
+//		FixedDeposit fd3 = new FixedDeposit(103, "Jim Beam", 20000, 4, FestivalType.HOLI);
+//		FixedDeposit fd4 = new FixedDeposit(104, "Jack Daniels", 25000, 2, FestivalType.OTHERS);
+//		
+//		System.out.println("Interest for fd1 (New Year): " + fd1.calculateSimpleInterest());
+//		System.out.println("Interest for fd2 (Diwali): " + fd2.calculateSimpleInterest());
+//		System.out.println("Interest for fd3 (Holi): " + fd3.calculateSimpleInterest());
+//		System.out.println("Interest for fd4 (Others): " + fd4.calculateSimpleInterest());
+	}
+}

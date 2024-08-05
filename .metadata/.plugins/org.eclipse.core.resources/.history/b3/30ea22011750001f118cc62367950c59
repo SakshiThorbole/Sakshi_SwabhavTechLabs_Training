@@ -1,0 +1,13 @@
+package com.aurionpro.structural.decorator.model;
+
+public class HatDecorator {
+	IHat hat;
+
+	public HatDecorator(IHat hat) {
+		super();
+		this.hat = hat;
+	}
+	
+	
+
+}

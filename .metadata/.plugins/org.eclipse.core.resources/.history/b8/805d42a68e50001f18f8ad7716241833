@@ -1,0 +1,11 @@
+package com.aurionpro.behavioural.observer.model;
+
+public class SMSNotifier implements INotifier {
+
+	@Override
+	public String notify(Account account) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

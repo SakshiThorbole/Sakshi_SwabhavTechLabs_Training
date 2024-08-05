@@ -1,0 +1,11 @@
+package com.aurionpro.behavioural.observer.model;
+
+import com.aurionpro.behavioural.observer.model.Packet;
+
+public interface IPacketState {
+	void current(Packet packet);
+	void next(Packet packet);
+	void previous(Packet packet);
+	
+
+}

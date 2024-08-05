@@ -1,0 +1,8 @@
+package com.aurionpro.behavioural.iterator.test;
+
+public class NameTest {
+	public static void main(String[] args) {
+		NameRepository nameRepository = new NameRepository(); // Create a collection of names
+	}
+
+}

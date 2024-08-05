@@ -1,0 +1,6 @@
+package com.aurionpro.behavioural.iterator.model;
+
+public class NameRepository implements IAggregate {
+	private Stribg[] names = {"Sakshi", "Thorbole", "Adi", "Sonu"};
+
+}

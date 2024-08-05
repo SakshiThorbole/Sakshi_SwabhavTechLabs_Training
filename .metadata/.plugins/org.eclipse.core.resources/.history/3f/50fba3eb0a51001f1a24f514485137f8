@@ -1,0 +1,14 @@
+package com.aurionpro.behavioural.iterator.test;
+
+public class NameTest {
+	public static void main(String[] args) {
+		NameRepository nameRepository = new NameRepository(); // Create a collection of names
+		
+		  while (iterator.hasNext()) { // Use the iterator to go through the collection
+	            String name = (String) iterator.next(); // Get the next name
+	            System.out.println("Name: " + name); // Print the name
+	        }
+		
+	}
+
+}

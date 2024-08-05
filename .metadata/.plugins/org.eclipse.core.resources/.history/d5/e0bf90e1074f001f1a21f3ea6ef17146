@@ -1,0 +1,17 @@
+package com.aurionpro.creational.abstracts.model;
+
+public class Maruti implemnets ICar{
+	@Override
+	public void start() {
+		System.out.println("Maruti car started");
+		
+	}
+
+	@Override
+	public void stop() {
+		System.out.println("Maruti car stoped");
+		
+	}
+
+
+}

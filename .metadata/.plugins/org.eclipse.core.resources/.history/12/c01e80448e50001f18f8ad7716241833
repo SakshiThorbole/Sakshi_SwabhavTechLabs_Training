@@ -1,0 +1,14 @@
+package com.aurionpro.behavioural.observer.test;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		
+		AccountTest account = new AccountTest();
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.aurionpro.behavioural.observer.model;
+
+public class AppNotifier implements INotifier {
+
+    @Override
+    public void notify(Account account) {
+        sendAppNotification();
+    }
+
+    public void sendAppNotification() {
+        System.out.println("App Notification Sent to account: " + account.getAccountNumber());
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SolidApp&apos; to &apos;22_SolidApp&apos;" description="Rename resource &apos;SolidApp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/SolidApp" name="22_SolidApp" stamp="1722281925710" updateReferences="true"/>
+</session>

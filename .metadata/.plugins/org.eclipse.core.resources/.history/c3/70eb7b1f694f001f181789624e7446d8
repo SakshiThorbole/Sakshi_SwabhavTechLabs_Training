@@ -1,0 +1,14 @@
+package com.aurionpro.model;
+
+public enum Builder {
+	FENDER, MARTIN, GIBSON, COLLINKS, OLSON, RYAN, PRS, ANY;
+	
+	public String toString() {
+		switch(this) {
+		case FENDER:
+			return "Fender";
+		
+		}
+	}
+
+}

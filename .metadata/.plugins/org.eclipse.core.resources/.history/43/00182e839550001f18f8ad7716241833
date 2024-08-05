@@ -1,0 +1,81 @@
+package com.aurionpro.behavioural.observer.test;
+
+import com.aurionpro.behavioural.observer.model.*;
+
+import java.util.Scanner;
+
+public class AccountTest {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of accounts: ");
+        int size = scanner.nextInt();
+
+        Account[] accountList = new Account[size];
+
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter your Account Number: ");
+            long accountNumber = scanner.nextLong();
+
+            System.out.println("Enter your name: ");
+            String name = scanner.next();
+
+            System.out.println("Enter your balance: ");
+            double balance = scanner.nextDouble();
+
+            Account account = new Account(accountNumber, name, balance);
+
+            
+            account.addNotifier(new SMSNotifier());
+            account.addNotifier(new AppNotifier());
+            account.addNotifier(new EmailNotifier());
+
+            accountList[i] = account;
+        }
+
+        for (Account account : accountList) {
+            account.display();
+
+            boolean continueOperation = true;
+            while (continueOperation) {
+                System.out.println("Do you want to credit or debit? (Enter 'credit' or 'debit', or 'exit' to quit): ");
+                String action = scanner.next();
+                
+          
+                switch (action) {
+                    case "credit":
+                        System.out.println("Enter amount to credit: ");
+                        double creditAmount = scanner.nextDouble();
+                        account.credit(creditAmount);
+                        break;
+
+                    case "debit":
+                        System.out.println("Enter amount to debit: ");
+                        double debitAmount = scanner.nextDouble();
+                        account.debit(debitAmount);
+                        break;
+
+                    case "exit":
+                        continueOperation = false;
+                        break;
+
+                    default:
+                        System.out.println("Invalid action. Please enter 'credit', 'debit', or 'exit'.");
+                        break;
+                }
+                
+                System.out.println("Which type of notification you want? (Enter 1. SMSNotifier, 2. EmailNotifier 3. AppNotifier)");
+                String answer = scanner.next();
+                
+                switch(answer) {
+                case 1:
+                	
+                }
+            }
+            
+        }
+
+        scanner.close();
+    }
+}

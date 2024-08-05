@@ -1,0 +1,15 @@
+package com.aurionpro.creational.prototype.model;
+
+public class ShapeClient {
+	private IShape shapePrototype;
+	 
+    // When you create a client, you give it a prototype (a shape).
+    public ShapeClient(IShape shapePrototype) {
+        this.shapePrototype = shapePrototype;
+    }
+ 
+    // This method creates a new shape using the prototype.
+    public IShape createShape() {
+        return shapePrototype.clone();
+    }
+}

@@ -1,0 +1,20 @@
+package com.aurionpro.creational.abstracts.model;
+
+import com.aurionpro.creational.factory.model.CurrentAccount;
+import com.aurionpro.creational.factory.model.IAccount;
+import com.aurionpro.creational.factory.model.SavingsAccount;
+import com.aurionpro.creational.factory.model.Type;
+
+public class AccountFactory {
+	public static IAccount makeAccount(Type type) {
+		IAccount account = null;
+		
+		if(type == Type.SAVINGS)
+			account = new SavingsAccount();
+		if(type == Type.CURRENT)
+			account = new CurrentAccount();
+		
+		
+		return account;
+
+}

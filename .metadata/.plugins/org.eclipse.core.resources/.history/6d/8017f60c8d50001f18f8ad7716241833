@@ -1,0 +1,23 @@
+package com.aurionpro.behavioural.observer.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Accout {
+	private long accountNumber;
+	private String name;
+	private double balance;
+	
+	List<Notifier> accountList = new ArrayList();
+
+	public Accout(long accountNumber, String name, double balance, List<Notifier> accountList) {
+		super();
+		this.accountNumber = accountNumber;
+		this.name = name;
+		this.balance = balance;
+		this.accountList = accountList;
+	}
+	
+	
+
+}

@@ -1,0 +1,45 @@
+package com.aurionpro.test;
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.Test;
+
+import com.aurionpro.model.TicTacToeGame;
+
+class TicTacToeGameTest {
+	
+	private TicTacToeGame game;
+	
+	@BeforeEach
+	public void setUp() {
+		game = new TicTacToeGame();
+	}
+
+	@Test
+	void testInitialBoard() {
+		String[] expectedBoard = {"1", "2", "3", "4", "5", "6", "7", "8", "9"};
+		assertArrayEquals(expectedBoard, game.board);
+	}
+
+	
+	@Test
+	public void testMakeMove() {
+		assertTrue(game.makeMove(1));
+		assertEquals("0", game.getCurrentTurn());
+		assertFalse(game.makeMove(1));   // Slot already taken
+		assertTrue(game.makeMove(2));
+        assertEquals("X", game.getCurrentTurn());
+	}
+
+	@Test
+	void testCheckWinner() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetCurrentTurn() {
+		fail("Not yet implemented");
+	}
+
+}

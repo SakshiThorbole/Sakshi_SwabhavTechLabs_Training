@@ -1,0 +1,12 @@
+package com.aurionpro.structural.facade.test;
+
+public class HotelTest {
+
+	public static void main(String[] args) {
+		
+		HotelReception r1 = new HotelReception();
+		r1.getIndianMenu();
+
+	}
+
+}

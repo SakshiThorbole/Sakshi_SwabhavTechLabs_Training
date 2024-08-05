@@ -1,0 +1,17 @@
+package com.aurionpro.test;
+
+import java.util.Scanner;
+
+public class TicTacToeGameTest {
+	public static void main(String[] args) {
+		
+		TicTacToeGame t1;
+		t1.play();
+		
+		
+		
+		
+
+	}
+
+}

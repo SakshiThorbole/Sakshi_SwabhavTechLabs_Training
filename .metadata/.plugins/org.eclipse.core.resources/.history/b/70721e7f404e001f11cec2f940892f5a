@@ -1,0 +1,36 @@
+package com.aurionpro.solution.model;
+
+import com.aurionpro.violation.model.DBLogger;
+
+public class TaxCalculator implements ILogger{
+	
+	DBLogger dblogger = new DBLogger();
+
+	public TaxCalculator() {
+		super();
+		this.dblogger = dblogger;
+	}
+	
+	
+	public DBLogger getDblogger() {
+		return dblogger;
+	}
+
+
+	public void setDblogger(DBLogger dblogger) {
+		this.dblogger = dblogger;
+	}
+
+
+	public int calculateTax(int amount, int rate) {
+		return amount/rate;
+	}
+
+
+	@Override
+	public void log() {
+		System.out.println("Logged into database");
+		
+	}
+
+}

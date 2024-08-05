@@ -1,0 +1,26 @@
+package com.aurionpro.model;
+
+import org.junit.jupiter.api.BeforeEach;
+
+public class AreaCalculatorTest {
+	
+	AreaCalculator calculator;
+	
+	@BeforeEach
+	void init() {
+		calculator = new AreaCalculator();
+	}
+	
+	void testCalculateAreaOfCircle() {
+		assertEquals(78.5, calculator.calculateAreaOfCircle(5));
+	}
+	
+	void testCalculateAreaOfRectangle() {
+		assertEquals(78.5, calculator.calculateAreaOfCircle(5));
+	}
+	
+	void testCalculateAreaOfTriangle() {
+		assertEquals(78.5, calculator.calculateAreaOfCircle(5));
+	}
+
+}

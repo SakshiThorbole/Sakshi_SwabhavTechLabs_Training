@@ -1,0 +1,17 @@
+package com.aurionpro.creational.factory.model;
+
+public class AccountFactory {
+	public static IAccount makeAccount(String accountName) {
+		IAccount account = null;
+		
+		if(accountName == "savings")
+			account = new SavingsAccount();
+		if(accountName == "current")
+			account = new CurrentAccount();
+		
+		
+		return account;
+		
+	}
+
+}

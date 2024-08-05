@@ -1,0 +1,10 @@
+
+
+public class NameRepository implements IAggregate {   // implements the Aggregate interface and returns an iterator
+    private String[] names = {"John", "Jane", "Jack", "Jill"};
+
+    @Override
+    public Iterator createIterator() {
+        return new NameIterator(names); // Returns an instance of NameIterator
+    }
+}

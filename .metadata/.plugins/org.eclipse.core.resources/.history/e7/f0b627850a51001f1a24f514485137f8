@@ -1,0 +1,12 @@
+package com.aurionpro.behavioural.iterator.model;
+
+import java.util.Iterator;
+
+public class NameRepository implements IAggregate {
+    private String[] names = {"John", "Jane", "Jack", "Jill"};
+
+    @Override
+    public Iterator createIterator() {
+        return new NameIterator(names);
+    }
+}

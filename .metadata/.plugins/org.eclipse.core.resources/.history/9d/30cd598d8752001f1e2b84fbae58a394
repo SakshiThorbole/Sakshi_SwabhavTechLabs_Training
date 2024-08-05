@@ -1,0 +1,32 @@
+package com.aurionpro.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class TicTacToeGameTest {
+
+	@Test
+	void testTicTacToeGame() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testPrintBoard() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testMakeMove() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testCheckWinner() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testGetCurrentTurn() {
+		fail("Not yet implemented");
+	}
+
+}

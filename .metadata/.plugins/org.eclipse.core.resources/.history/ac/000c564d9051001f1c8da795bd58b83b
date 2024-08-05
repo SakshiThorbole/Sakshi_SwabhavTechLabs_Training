@@ -1,0 +1,14 @@
+package com.aurionpro.model;
+
+import java.util.Scanner;
+
+class TicTacToeGame {
+	String[] board;
+	String turn;
+	
+	void printBoard() {
+		System.out.println("|---|---|---|");
+//		System.out.println("|")
+	}
+  
+  }

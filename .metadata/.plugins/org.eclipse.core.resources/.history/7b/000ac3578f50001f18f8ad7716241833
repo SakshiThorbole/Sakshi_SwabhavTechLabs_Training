@@ -1,0 +1,39 @@
+package com.aurionpro.behavioural.observer.test;
+
+import java.util.Scanner;
+
+public class AccountTest {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter the size of the array: ");
+		int size = scanner.nextInt();
+		
+		Account accountList[] = new Account[size];
+		
+		for(int i = 0; i < size; i++) {
+			
+			System.out.println("Enter your Account Number: ");
+			String name = scanner.next();
+			
+			System.out.println("Enter your name: ");
+			double balance = scanner.nextDouble();
+			
+			System.out.println("Enter your balance: ");
+			String accountType = scanner.next();
+			
+			Account[i] = new Account(accountNumber, name, balance);
+		}
+		
+//		for(int i = 0; i < Account.length; i++) {
+//				Account[i].display();
+//		}
+		
+		
+		
+
+	}
+
+}

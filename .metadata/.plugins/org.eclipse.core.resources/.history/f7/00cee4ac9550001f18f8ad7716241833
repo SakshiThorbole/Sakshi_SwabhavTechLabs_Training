@@ -1,0 +1,99 @@
+package com.aurionpro.behavioural.observer.test;
+
+import com.aurionpro.behavioural.observer.model.*;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class AccountTest {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter the number of accounts: ");
+        int size = scanner.nextInt();
+
+        Account[] accountList = new Account[size];
+
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter your Account Number: ");
+            long accountNumber = scanner.nextLong();
+
+            System.out.println("Enter your name: ");
+            String name = scanner.next();
+
+            System.out.println("Enter your balance: ");
+            double balance = scanner.nextDouble();
+
+            Account account = new Account(accountNumber, name, balance);
+
+            // Prompt user to select notification types
+            List<INotifier> notifiers = new ArrayList<>();
+            System.out.println("Which types of notifications do you want? (Enter numbers separated by spaces): ");
+            System.out.println("1. SMSNotifier");
+            System.out.println("2. EmailNotifier");
+            System.out.println("3. AppNotifier");
+            System.out.println("Enter your choices: ");
+            String[] choices = scanner.next().split(" ");
+
+            for (String choice : choices) {
+                switch (choice) {
+                    case "1":
+                        notifiers.add(new SMSNotifier());
+                        break;
+                    case "2":
+                        notifiers.add(new EmailNotifier());
+                        break;
+                    case "3":
+                        notifiers.add(new AppNotifier());
+                        break;
+                    default:
+                        System.out.println("Invalid choice: " + choice);
+                        break;
+                }
+            }
+
+            // Add selected notifiers to the account
+            for (INotifier notifier : notifiers) {
+                account.addNotifier(notifier);
+            }
+
+            accountList[i] = account;
+        }
+
+        for (Account account : accountList) {
+            account.display();
+
+            boolean continueOperation = true;
+            while (continueOperation) {
+                System.out.println("Do you want to credit or debit? (Enter 'credit' or 'debit', or 'exit' to quit): ");
+                String action = scanner.next();
+
+                switch (action) {
+                    case "credit":
+                        System.out.println("Enter amount to credit: ");
+                        double creditAmount = scanner.nextDouble();
+                        account.credit(creditAmount);
+                        break;
+
+                    case "debit":
+                        System.out.println("Enter amount to debit: ");
+                        double debitAmount = scanner.nextDouble();
+                        account.debit(debitAmount);
+                        break;
+
+                    case "exit":
+                        continueOperation = false;
+                        break;
+
+                    default:
+                        System.out.println("Invalid action. Please enter 'credit', 'debit', or 'exit'.");
+                        break;
+                }
+            }
+        }
+
+        scanner.close();
+    }
+}

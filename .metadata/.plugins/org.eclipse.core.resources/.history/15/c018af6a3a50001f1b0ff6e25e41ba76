@@ -1,0 +1,13 @@
+package com.aurionpro.structural.proxy.model;
+
+public class ProxyImage implements IImage {
+	private RealImage realImage;
+	private String fileName;
+	
+	public ProxyImage(String fileName) {	
+		this.fileName = fileName;
+	}
+	
+	
+
+}

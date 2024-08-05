@@ -1,0 +1,33 @@
+package com.aurionpro.behavioural.observer.model;
+
+import com.aurionpro.behavioural.state.model.IPacketState;
+
+public class Packet {
+	IPacketState packet;
+
+	public Packet(IPacketState packet) {
+		super();
+		this.packet = packet;
+	}
+
+	public IPacketState getPacket() {
+		return packet;
+	}
+
+	public void setPacket(IPacketState packet) {
+		this.packet = packet;
+	}
+
+	public void goToNextState() {
+		
+	}
+	
+	public void goToPreviousState() {
+		
+	}
+	
+	public void printCurrentState() {
+		
+	}
+
+}

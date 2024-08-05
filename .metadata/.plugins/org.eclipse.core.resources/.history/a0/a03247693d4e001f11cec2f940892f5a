@@ -1,0 +1,8 @@
+package com.aurionpro.violation.model;
+
+public class TaxCalculator {
+	private dblogger DBLogger;
+	
+	
+
+}

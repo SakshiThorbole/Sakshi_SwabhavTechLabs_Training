@@ -1,0 +1,15 @@
+package com.aurionpro.structural.adaptor.test;
+
+import com.aurionpro.structural.adaptor.model.ShoppingCart;
+
+public class ShoppingCartTest {
+	public static void main(String[] args) {
+		
+		ShoppingCart s1 = new ShoppingCart();
+		s1.addItemToCart(pohe);
+		
+		
+
+	}
+
+}

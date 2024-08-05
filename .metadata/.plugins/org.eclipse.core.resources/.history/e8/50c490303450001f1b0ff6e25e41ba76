@@ -1,0 +1,30 @@
+package com.aurionpro.structural.composite.model;
+
+public class SimpleTask implements ITask {
+	private String title;
+	
+	
+	public SimpleTask(String title) {
+		super();
+		this.title = title;
+	}
+
+	@Override
+	public String getTitle() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setTitle() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

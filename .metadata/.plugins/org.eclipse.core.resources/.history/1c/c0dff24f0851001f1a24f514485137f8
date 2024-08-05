@@ -1,0 +1,5 @@
+package com.aurionpro.behavioural.iterator.model;
+
+public interface IAggregate {  // This is the interface that defines the method to create an iterator
+	 Iterator createIterator();
+}

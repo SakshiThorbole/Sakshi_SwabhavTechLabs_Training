@@ -1,0 +1,9 @@
+// This class implements the Aggregate interface and returns an iterator
+public class NameRepository implements Aggregate {
+    private String[] names = {"John", "Jane", "Jack", "Jill"};
+
+    @Override
+    public Iterator createIterator() {
+        return new NameIterator(names); // Returns an instance of NameIterator
+    }
+}

@@ -1,0 +1,19 @@
+package com.aurionpro.behavioural.observer.model;
+
+public class Ordered implements IPacketState {
+
+    @Override
+    public void current(Packet packet) {
+        System.out.println("Current state: Ordered");
+    }
+
+    @Override
+    public void next(Packet packet) {
+        packet.setState(new Shipped());
+    }
+
+    @Override
+    public void previous(Packet packet) {
+        System.out.println("No previous state");
+    }
+}

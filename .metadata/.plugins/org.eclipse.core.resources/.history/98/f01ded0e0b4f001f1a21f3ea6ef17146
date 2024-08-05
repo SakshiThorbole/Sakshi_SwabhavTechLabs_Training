@@ -1,0 +1,16 @@
+package com.aurionpro.creational.abstracts.model;
+
+import com.aurionpro.creational.factory.model.ICar;
+import com.aurionpro.creational.factory.model.Mahindra;
+
+public class MahindraFactory implements ICarFactory {
+	ICar car = null;
+
+	@Override
+	public void makeCar(String carName) {
+		if(carName == "Mahindra")
+			car = new Mahindra();
+		
+	}
+
+}
