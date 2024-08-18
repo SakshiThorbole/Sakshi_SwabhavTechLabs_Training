@@ -2,12 +2,16 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.aurionpo"/>
 			<item value="com.aurionpro"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="27_UnitTestingApp"/>
+			<item value="37_SpringCoreApp2"/>
+			<item value="36_SpringCoreApp1"/>
+			<item value="36_SpringCoreApplication"/>
+			<item value="36_SpringCoreApp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -33,6 +37,12 @@
 		<list key="issueManagementUrl">
 		</list>
 	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="443" key="x"/>
+		<item value="10" key="y"/>
+		<item value="531" key="height"/>
+	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -45,6 +55,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Aurionpro Training\28_ServletsApp\src"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

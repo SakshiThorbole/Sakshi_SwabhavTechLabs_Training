@@ -1,8 +1,0 @@
-package com.aurionpro.solution.model;
-
-public interface ILogger {
-	public void log() {
-		System.out.println("Logged into database");
-	}
-
-}

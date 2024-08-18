@@ -1,5 +1,0 @@
-package com.aurionpro.creational.abstracts.model;
-
-public interface ICar {
-
-}

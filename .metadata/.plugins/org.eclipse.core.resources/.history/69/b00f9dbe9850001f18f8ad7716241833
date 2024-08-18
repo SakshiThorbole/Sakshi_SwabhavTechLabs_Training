@@ -1,9 +1,0 @@
-package com.aurionpro.behavioural.observer.model;
-
-public interface IPacketState {
-	void current(Packet);
-	void next(Packet);
-	void previous(Packet);
-	
-
-}

@@ -1,8 +1,0 @@
-package com.aurionpro.creational.abstracts.model;
-
-import com.aurionpro.creational.factory.model.Type;
-
-public interface IAccountFactory {
-	IAccount makeAccount(AccountType type);
-
-}
